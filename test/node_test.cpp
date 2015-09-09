@@ -12,7 +12,7 @@
 #include <cppunit/XmlOutputter.h>
 
 #include <iostream>
-#include "node.hpp"
+#include "../src/node.hpp"
 
 using namespace std;
 
