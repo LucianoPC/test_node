@@ -1,0 +1,12 @@
+language: c++
+compiler:
+- g++
+before_script:
+- git clone https://github.com/LucianoPC/test_node.git
+- sudo apt-get install libcppunit-dev
+script:
+- g++ -o prog test/node_test.cpp -lcppunit
+- ./prog
+branches:
+  only:
+  - master
