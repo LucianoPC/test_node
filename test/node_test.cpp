@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class NodeTest : public CppUnit::TestFixture 
+class NodeTest : public CppUnit::TestFixture
 {
 public:
   static CppUnit::Test *suit()
@@ -52,27 +52,10 @@ public:
 int main()
 {
   CppUnit::TextUi::TestRunner runner;
-  
+
   runner.addTest(NodeTest::suit());
 
-  runner.run();
+  bool wasSucessful = !runner.run();
 
-  return 0;
+  return wasSucessful;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
