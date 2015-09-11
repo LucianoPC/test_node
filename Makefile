@@ -7,7 +7,6 @@ TEST_DIR		  := test
 OBJ_TEST_DIR  := obj
 BIN_DIR       := bin
 MAIN_SOURCE		:= main
-MAIN_TEST			:= node_test
 
 SOURCE_EXT    := cpp
 SOURCES       := $(shell find $(SOURCE_DIR) -type f -name *.$(SOURCE_EXT))
